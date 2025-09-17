@@ -1,0 +1,147 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/utilities" as *;
+
+.frs-sidebar {
+  &__wrap {
+    display: flex;
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 98.1%;
+    padding: 10px;
+    width: 60px;
+    background-image: $gradient-dark-green;
+    transition: 0.5s all;
+    border-top: 1px solid $vibrant-green;
+    border-right: 3px solid $vibrant-green;
+    border-bottom: 1px solid $vibrant-green;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+  }
+
+  &__logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    // padding: 0 10px;
+    cursor: pointer;
+  }
+  &--logo-active {
+    margin-left: 20px;
+  }
+
+  &__toggle {
+    width: 24px;
+    height: 24px;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    60% {
+      transform: translateX(10px);
+    }
+  }
+
+  // Toggle arrow right styling with bounce
+  &__toggle-arrow-right {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -30.5px;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    // Apply bounce animation
+    animation: bounce 2s infinite;
+  }
+  &__toggle-arrow-left {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -160px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 0.3s all;
+  }
+
+  &__logo-text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 18px;
+    color: $white;
+    white-space: nowrap;
+    opacity: 0;
+    display: none;
+    transition: 0.3s all;
+
+    .frs-sidebar--active & {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    opacity: 0;
+    display: none;
+    text-transform: capitalize;
+    // white-space: nowrap;
+
+    &--active {
+      opacity: 1;
+      display: flex;
+    }
+  }
+
+  &--active {
+    width: 240px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .frs-sidebar__toggle {
+      right: 0;
+      transform: rotate(0deg);
+    }
+  }
+
+  &__items,
+  &__extra-items {
+    @extend %flex-column;
+    gap: 3px 0;
+    flex: 1;
+  }
+
+  &__extra-items {
+    margin-top: 20px;
+    min-width: 100%;
+  }
+
+  &__item {
+    @extend %flex-start-center;
+    gap: 0 20px;
+    color: $white;
+  }
+
+  &__saved {
+    cursor: pointer;
+  }
+}

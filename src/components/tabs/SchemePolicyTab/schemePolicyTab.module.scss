@@ -1,0 +1,13 @@
+@use "../../../styles/partials/variables" as *;
+.frs-tab-section__schemePolicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.frs-tab-section__schemePolicy-area {
+  border: 2px solid $natural-green;
+  width: 180px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

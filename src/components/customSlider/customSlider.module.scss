@@ -1,0 +1,89 @@
+@use "../../styles/partials/variables" as *;
+.frs-custom-slider {
+  &__container {
+    max-width: 600px;
+    padding: 1rem;
+  }
+
+  &__track-wrapper {
+    position: relative;
+    height: 30px;
+    padding-top: 10px; // optional top padding
+  }
+
+  &__slider {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: transparent;
+    z-index: 2;
+
+    &::-webkit-slider-thumb {
+      pointer-events: auto;
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #28a745;
+      cursor: pointer;
+      z-index: 3;
+      position: relative;
+      margin-top: -6px; // center thumb vertically with track
+    }
+
+    &::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #28a745;
+      cursor: pointer;
+      margin-top: -6px; // for Firefox alignment
+    }
+  }
+
+  &__range-track {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px;
+    background: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__range-selected {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px;
+    background: #28a745;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    .frs-custom-slider__label {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .frs-custom-slider__active {
+      color: $black;
+      font-weight: bold;
+    }
+  }
+   &__footer-label {
+    margin-top: 6px;
+    font-size: 14px;
+    color: $light-black;
+    text-align: center;
+  }
+}

@@ -1,0 +1,113 @@
+@use "../../styles/partials/variables" as *;
+.frs-tab-section {
+  &__wrap {
+    position: absolute;
+    background: $white;
+    border-radius: 15px 0px 0px;
+    transition: all 0.3s ease;
+    left: 90px;
+    right: 63px;
+    bottom: 60px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    transition: max-height 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
+    &--collapsed {
+      width: 96%;
+      height: 56px;
+      max-height: 100px;
+      bottom: 80px;
+      transform: translateY(20px);
+      opacity: 1;
+    }
+
+    &--expanded {
+      height: 40vh;
+      max-height: 60vh;
+      width: 96%;
+      bottom: 38px;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+  }
+
+  &__tab {
+    padding: 8px 30px;
+    border: none;
+    background-color: $white;
+    border: 1px solid $teal-dark;
+    cursor: pointer;
+    color: $teal-dark;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 16px;
+    &:hover {
+      background-color: #009b77;
+      border: 1px solid #009b77;
+      color: $white;
+    }
+
+    &--active {
+      background-color: $teal-dark;
+      border: 1px solid $teal-dark;
+      color: $white;
+
+      &:hover {
+        background-color: $teal-dark;
+        // border: 1px solid #009b77;
+        // color: #fff;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 10px;
+    flex-grow: 1;
+  }
+
+  &__export {
+    position: absolute;
+    bottom: 45px;
+    right: 8px;
+  }
+
+  &__export-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #158f28;
+    color: $white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__export-button:hover {
+    background: linear-gradient(180deg, #22b822 0%, #158f28 100%);
+  }
+
+  &__export-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+}

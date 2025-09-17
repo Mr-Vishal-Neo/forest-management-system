@@ -1,0 +1,11 @@
+@use "../../../styles/partials/variables" as *;
+.frs-tab-section__site-analysis {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 15px;
+}
+
+.frs-tab-section__dropdown {
+  width: 470px;
+  margin: 10px 0 0 30px;
+}

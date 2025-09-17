@@ -1,0 +1,13 @@
+@use "../../../styles/partials/variables" as *;
+.frs-tab-section__recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.frs-tab-section__recommendations-area {
+  border: 2px solid $natural-green;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}

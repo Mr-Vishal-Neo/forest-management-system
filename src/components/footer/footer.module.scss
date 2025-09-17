@@ -1,0 +1,28 @@
+@use "../../styles/partials/variables" as *;
+
+.frs-footer {
+  &__wrap {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 25px;
+    padding: 6px 10px;
+    font-size: 16px;
+    background-color: $white;
+    border-top: 1px solid #ddd;
+
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+        color: $black;
+      }
+    }
+  }
+}

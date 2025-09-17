@@ -1,0 +1,36 @@
+@use "../../styles/partials/variables" as *;
+
+.frs-analytics-btn {
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid $vibrant-green;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 16px;
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: -25px;
+    right: 25px;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__show {
+    background-color: $deep-green;
+  }
+  &__hide {
+    background-color: $teal-dark;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 16px;
+    transition: transform 0.3s;
+  }
+}

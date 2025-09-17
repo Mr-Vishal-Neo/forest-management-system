@@ -1,0 +1,52 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/utilities' as *;
+
+.frs-buttonIcon {
+    &__wrap {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        z-index: $sidebar;
+        @extend %flex-between-center;
+        gap: 10px;
+        transition: right 0.3s ease;
+        margin-top: 5px;
+        padding-top: 10px;
+        
+        &--panel-open {
+            right: 650px;
+        }
+    }
+
+    &__button {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        border-radius: 100%;
+        border: $icon-radius;
+        // background: radial-gradient(circle, $contact-icon-gradient-1 0%, $contact-icon-gradient-2 100%);
+        background-image: linear-gradient(90deg, #0b2b26 1%, #235347 100%);
+        @extend %flex-center;
+        cursor: pointer;
+    }
+
+    // &__dot{
+    //     position: absolute;
+    //     width: 8px;
+    //     height: 8px;
+    //     background-color: $profile-active;
+    //     border-radius: 100%;
+    //     top:3px;
+    //     left: 22px;
+    // }
+
+    &__contact {
+        color: $white;
+        
+    }
+
+    // &__chatbot {
+    //     color: radial-gradient(circle, $profile-active 0%, $chatbot-gradient-1 100%);
+    // }
+}

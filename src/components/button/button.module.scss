@@ -1,0 +1,53 @@
+@use "../../styles/partials/variables" as *;
+
+.frs {
+  &-login__btn {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin: 8px 0;
+    border: none;
+    border: 2px solid #b8bbc2;
+    color: $white;
+    background: #b8bbc2;
+
+    &:hover {
+      border: 2px solid #22b822;
+      background: linear-gradient(180deg, #22b822 0%, #158f28 100%);
+      color: $white;
+    }
+  }
+
+  // &-profile__btn {
+  //   height: 40px;
+  //   font-weight: 600;
+  //   letter-spacing: 2px;
+  //   border: none;
+  //   border: 1px solid transparent;
+  //   color: $white;
+  //   background: $text-violet;
+  //   transition: 0.3s all;
+  //   text-transform: uppercase;
+
+  //   &:hover {
+  //     border: 1px solid $text-violet;
+  //     color: $label-active;
+  //     background: $secondary-violet;
+  //   }
+  // }
+
+  &-button {
+    width: 580px;
+    height: 60px;
+    // transition: 0.3s all;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    &--disable {
+      background: $secondary-violet;
+      pointer-events: none;
+    }
+  }
+}

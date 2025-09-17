@@ -1,0 +1,104 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/utilities" as *;
+
+.frs-sidebtn {
+  &__item {
+    @extend %flex-start-center;
+    gap: 0 4px;
+    cursor: pointer;
+    transition: 0.3s all;
+    position: relative;
+    padding: 0px 12px;
+    // width: 240px;
+    border-radius: 8px;
+    display: flex;
+
+    &:hover {
+      background-color: $deep-green;
+    }
+
+    &--active {
+      background-color: $dark-green;
+
+      .frs-sidebtn__text {
+        color: $white;
+      }
+      &:hover {
+        background-color: $dark-green;
+
+        .frs-sidebtn__icon {
+          filter: brightness(0) invert(1);
+        }
+
+        .frs-sidebtn__text {
+          color: $white;
+        }
+      }
+    }
+
+    // Tooltip on hover
+    &:hover .frs-sidebtn__tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__icon {
+    @extend %flex-center;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    margin: 15px 0;
+    border-radius: $radius-input;
+    transition: 0.3s all;
+    background-color: transparent;
+
+    svg {
+      color: $white;
+      width: $sidebar-icon;
+      height: $sidebar-icon;
+      transition: 0.3s all;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    // line-height: 15px;
+    opacity: 0;
+    display: none;
+    text-transform: capitalize;
+    color: $white;
+
+    &--active {
+      opacity: 1;
+      display: flex;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    left: 94%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    background: $gradient-forest-green;
+    color: $white;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+  }
+
+  &:hover &__tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}

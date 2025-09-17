@@ -1,0 +1,134 @@
+$font-family-base: "Poppins", sans-serif;
+
+// colors
+$sky-teal: #21c6b2;
+$amber-gold: #f5b942;
+$soft-coral: #ff6f61;
+
+$deep-green: #17815c;
+$vibrant-green: #14b850;
+$coral-red: #ff6f61;
+$teal-blue: #00b2a9;
+$dark-green: #00563b;
+$teal-dark: #005b5c;
+$light-black: #111111;
+$dark-gray: #222222;
+$neon-green: #01fd2f;
+$natural-green: #2a9e37;
+$off-white: #f4f4f4;
+$light-gray-white: #f9f9f9;
+$light-gray: #d9d9d9;
+$light-gray: #d9d9d9;
+$medium-gray: #9c9b9b;
+$dark-gray: #666666;
+$extra-light-gray: #e2e2e2;
+$soft-purple: #f0eeff;
+$dark-charcoal: #21272a;
+
+$primary-violet: #672c90;
+$dark-violet: #3b0c76;
+$text-violet: #734199;
+$muted-indigo: #a093d4;
+$accent-purple: #8e44f7;
+$purple: #641698;
+
+$retail-blue: #25ffff;
+$visitor-blue: #0dc5e5;
+
+$visitor-green: #00c458;
+$grass-green: #16d26b;
+$profile-active: #00fbac;
+
+$secondary-violet: #fbf0ff;
+$demostat-box-hover: #fcf4ff;
+
+$black: #000000;
+$searchbox-shadow: #00000033;
+$separator-text-color: #212121;
+$text-color: #333333;
+$label-active: #424242;
+$border-active-grey: #424242;
+$text-accent: #555555;
+$label-disable: #bebebe;
+$border-disable-grey: #bdbdbd;
+$separator-line-color: #e0e0e0;
+$white: #ffffff;
+
+// gradients
+$sidebar-gradient-color1: #410d6e;
+$contact-icon-gradient-1: #45166e;
+$drpdwn-gradient-1: #2f0b62;
+$sidebar-gradient-color2: #6b07c1;
+$drpdwn-gradient-2: #590a9e;
+$contact-icon-gradient-2: #852ad4;
+$sidebar-btn-gradient-1: #9966ff;
+$sidebar-btn-gradient-2: #c777ff;
+$drpdwn-desc-border-gradient-1: #c412ff;
+$drpdwn-desc-border-gradient-3: #ff00c8;
+$drpdwn-desc-border-gradient-4: #ffea00;
+$retail-gradient-2: #32045b;
+$chatbot-gradient-1: #00ccff;
+$drpdwn-desc-border-gradient-2: #25d7ff;
+
+$gradient-dark-green: linear-gradient(90deg, #0b2b26 0%, #235347 100%);
+$gradient-forest-green: linear-gradient(90deg, #196d2b 0%, #0f5d36 100%);
+
+// borders
+$input-disable-border: 1px solid $border-disable-grey;
+$input-active-border: 1px solid $border-active-grey;
+$radius-login: 10px 10px 0 0;
+$radius-input: 10px;
+$searchbox-border: 2px solid $muted-indigo;
+$icon-radius: 1px solid $secondary-violet;
+$radius-drpdwn: 0 0 10px 10px;
+
+// position
+$eye-icon: 20px;
+$edit-icon: 30px;
+$sidebar-icon: 24px;
+$sidebar-box: 50px;
+
+// z-index
+$map-component: 0;
+$right-sidebar: 0;
+$searchBox: 1;
+$sidebar: 2;
+
+// shadows
+$site-score-shadow: 0 4px 10px 0;
+$visitor-shadow: 0 0 4px 0 rgba(34, 14, 81, 0.1);
+$shadow-avgdrivetime: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+$shadow-drpdwnhead: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+$shadow-tooltip: 0 4px 10px 0 rgba(100, 22, 152, 0.2);
+$shadow-seachinput: 0px 4px 8px $searchbox-shadow;
+$shadow-sidepanel: -2px 0 10px rgba(0, 0, 0, 0.15);
+
+// Font Sizes
+$font-size-xxs: 8px;
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 30px;
+$font-size-4xl: 36px;
+$font-size-5xl: 48px;
+$font-size-6xl: 60px;
+$font-size-7xl: 72px;
+
+// line heights
+$line-height-xs: 1.2;
+$line-height-sm: 1.4;
+$line-height-base: 1.5;
+$line-height-lg: 1.6;
+$line-height-xl: 1.8;
+$line-height-heading: 1.2;
+
+// Font Families
+$font-family-base: "Poppins", sans-serif; 
+$font-family-heading: "Montserrat", sans-serif; 
+$font-family-monospace: "Roboto Mono", monospace; 
+$font-family-serif: "Merriweather", serif; 
+$font-family-fallback: Arial, Helvetica, sans-serif; 

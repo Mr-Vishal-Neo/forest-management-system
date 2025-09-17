@@ -1,0 +1,22 @@
+@use "../../styles/partials/variables" as *;
+
+.frs-map {
+  &__wrap {
+    height: 100vh;
+    width: 100vw;
+    z-index: $map-component;
+  }
+}
+:global(.leaflet-tooltip) {
+  background-color: $natural-green;
+  color: $white;
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  max-width: 250px;
+}
+
+// Optional arrow customization
+:global(.leaflet-tooltip::before) {
+  border-top-color: $natural-green !important;
+}

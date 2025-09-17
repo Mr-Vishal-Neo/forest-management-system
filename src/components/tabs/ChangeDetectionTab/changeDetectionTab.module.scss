@@ -1,0 +1,28 @@
+@use "../../../styles/partials/variables" as *;
+.frs-tab-section__change-detection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+.frs-tab-section__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.frs-tab-section__slider-label {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 6px;
+}
+
+.frs-tab-section__checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 20px;
+  max-width: 600px;
+  padding-left: 10px;
+}
