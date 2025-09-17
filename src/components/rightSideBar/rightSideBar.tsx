@@ -1,4 +1,4 @@
-import rightSidebarCss from "./rightSidebar.module.scss";
+import rightSidebarCss from "./rightSideBar.module.scss";
 // import { Images } from "../../assets/assets";
 import type { RightBarType } from "../../types/types";
 // import ButtonIcon from "../buttonIcon/buttonIcon";
